@@ -13,7 +13,7 @@
   --gold:#d4a017;--gold-light:#f5c842;--white:#f0ece4;
   --grey:#888;--hud:#00e5ff;--hud-dim:rgba(0,229,255,0.15);
   --danger:#ff3232;--green:#22c55e;--purple:#a855f7;
-  --api:http://localhost:5000;
+  --api:'';
 }
 html{scroll-behavior:smooth;}
 body{background:#000;color:var(--white);font-family:'Rajdhani',sans-serif;overflow-x:hidden;cursor:crosshair;}
@@ -470,7 +470,7 @@ body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradie
 /* ════════════════════════════════════════════════════════════
    CONFIG — Backend URL
    ════════════════════════════════════════════════════════════ */
-const API = 'http://localhost:5000';
+const API = window.location.origin;
 
 /* ════════════════════════════════════════════════════════════
    THREE.JS BACKGROUND
